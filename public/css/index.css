@@ -333,4 +333,7 @@ header.product-copy p {
 .footer {
     font-family: "Courier New", ui-monospace, monospace;
     font-size: 0.8rem;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: clamp(24px, 5vw, 72px) 24px 96px;
 }
