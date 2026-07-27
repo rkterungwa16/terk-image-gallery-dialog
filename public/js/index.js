@@ -11,22 +11,22 @@ const PANELS = [
   {
     id: "1",
     alt: "wisola blue taffeta pleated corset front view",
-    src: "public/assets/wisola-blue-taffeta-pleated-corset-1.webp",
+    src: "public/assets/gallery/wisola-blue-taffeta-pleated-corset-1.webp",
   },
   {
     id: "2",
     alt: "wisola blue taffeta pleated corset back view",
-    src: "public/assets/wisola-blue-taffeta-pleated-corset-2.webp",
+    src: "public/assets/gallery/wisola-blue-taffeta-pleated-corset-2.webp",
   },
   {
     id: "3",
     alt: "wisola blue taffeta pleated corset side view",
-    src: "public/assets/wisola-blue-taffeta-pleated-corset-3.webp",
+    src: "public/assets/gallery/wisola-blue-taffeta-pleated-corset-3.webp",
   },
   {
     id: "4",
     alt: "wisola blue taffeta pleated corset closeup back view",
-    src: "public/assets/wisola-blue-taffeta-pleated-corset-4.webp",
+    src: "public/assets/gallery/wisola-blue-taffeta-pleated-corset-4.webp",
   },
 ];
 
