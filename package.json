@@ -1,0 +1,24 @@
+{
+  "name": "terk-image-gallery-dialog",
+  "version": "1.0.0",
+  "description": "A vanilla JavaScript implementation of an image gallery dialog using publish/subscriber pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkterungwa16/terk-image-gallery-dialog.git"
+  },
+  "keywords": [
+    "Image",
+    "Gallery",
+    "Dialog"
+  ],
+  "author": "Terungwa Kombol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rkterungwa16/terk-image-gallery-dialog/issues"
+  },
+  "homepage": "https://github.com/rkterungwa16/terk-image-gallery-dialog#readme"
+}
