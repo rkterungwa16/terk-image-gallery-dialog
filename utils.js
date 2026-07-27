@@ -24,15 +24,29 @@ const processPostRequest = (req, callback) => {
   });
 };
 
-const asyncReadFile = (path) => {
+const asyncReadFile = (path, ext) => {
+  console.log('EXTENSTION__', ext);
   return new Promise((resolve, reject) => {
-    fs.readFile(path, "utf8", (err, stringifiedData) => {
-      if (!err && stringifiedData) {
-        resolve(stringifiedData);
-      }
+    const isAnImage = ["webp", "jpg", "png", "jpeg", "avif"].includes(ext);
+    console.log('IS_AN_IMAGE__', isAnImage);
+    if (isAnImage) {
+      fs.readFile(path, (err, stringifiedData) => {
+        if (!err && stringifiedData) {
+          resolve(stringifiedData);
+        }
 
-      reject(new Error(err));
-    });
+        reject(new Error(err));
+      });
+    } else {
+      fs.readFile(path, "utf8", (err, stringifiedData) => {
+        if (!err && stringifiedData) {
+          resolve(stringifiedData);
+        }
+
+        reject(new Error(err));
+      });
+    }
+
   });
 };
 

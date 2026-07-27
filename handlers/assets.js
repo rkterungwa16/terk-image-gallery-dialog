@@ -50,9 +50,10 @@ const Assets = async (req, res) => {
     const urlPath = path.join(__dirname, `/../${req.url}`);
     console.log("REQ.URL", req.url);
     console.log("URL__PATH__", urlPath);
-    const data = await asyncReadFile(urlPath);
+    const ext = urlPath.split(".").pop();
+    const data = await asyncReadFile(urlPath, ext);
     serve({
-      ext: urlPath.split(".").pop(),
+      ext,
       content: data,
     });
   } catch (e) {
