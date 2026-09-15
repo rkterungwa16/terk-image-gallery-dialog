@@ -20,4 +20,82 @@
     <div class="wrapper">
       <!-- Page-Specific Content -->
       <div class="w-100 flex justify-center">
+          <main>
+              <section class="gallery" id="gallery" aria-label="Product gallery">
+                  <div
+                      class="gallery__rail"
+                      id="gallery-thumb-rail"
+                      role="tablist"
+                      aria-label="Select image"
+                  ></div>
+
+                  <div class="gallery__main" id="gallery-main-viewer">
+                      <button
+                          class="zoom-cue"
+                          id="zoom-cue"
+                          type="button"
+                          aria-label="Open zoomed view"
+                      >
+                          <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                          >
+                              <circle cx="11" cy="11" r="7" />
+                              <path d="M21 21l-4.3-4.3" stroke-linecap="round" />
+                              <path d="M11 8v6M8 11h6" stroke-linecap="round" />
+                          </svg>
+                      </button>
+                  </div>
+              </section>
+              <header class="product-copy">
+                  <p class="eyebrow">Lulus — No. 0114</p>
+                  <h1>Wisola Blue Taffeta Pleated Corset High-Low Maxi Dress</h1>
+                  <p class="spec">
+                      Dress Measures 27" Longer At Back.
+                  </p>
+                  <hr class="divider" />
+                  <p>
+                      Boasting a statement silhouette designed with jaw-dropping intention, this sleek taffeta dress embodies modern regality. Slender straps support a corset-style bodice with a flattering square neckline and supportive boning. The banded waist sits atop a full A-line skirt, accentuated by chic box pleating and an alluring high-low hem that cascades behind. A lace-up panel at the back lends a romantic finish atop a hidden zipper/clasp.
+                  </p>
+              </header>
+          </main>
+
+          <dialog id="zoom-dialog" aria-label="Zoomed product images">
+              <div class="zoom-dialog__layout">
+                  <div class="zoom-dialog__bar">
+                      <span class="eyebrow" id="zoom-current-label"
+                          >Aperture 50mm f/1.4 — loupe view</span
+                      >
+                      <button
+                          class="zoom-dialog__close"
+                          id="zoom-close"
+                          type="button"
+                          aria-label="Close"
+                      >
+                          <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.6"
+                          >
+                              <path
+                                  d="M5 5l14 14M19 5L5 19"
+                                  stroke-linecap="round"
+                              />
+                          </svg>
+                      </button>
+                  </div>
+
+                  <div class="zoom-dialog__media" id="zoom-media-rail"></div>
+                  <div
+                      class="zoom-dialog__thumbs"
+                      id="zoom-thumbnails"
+                      role="tablist"
+                      aria-label="Select image"
+                  ></div>
+              </div>
+          </dialog>
+
 </html>

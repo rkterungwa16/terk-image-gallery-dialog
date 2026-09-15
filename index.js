@@ -3,7 +3,7 @@ const { Routers } = require("./router");
 const { HomePage } = require("./handlers/pages/home.page.js");
 const { Assets } = require("./handlers/assets.js");
 
-const port = process.env.PORT || 8300;
+const port = process.env.PORT || 8700;
 
 Routers.register("public", Assets).register('/', HomePage);
 

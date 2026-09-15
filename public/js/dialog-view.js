@@ -22,6 +22,7 @@ export class ZoomDialogView extends View {
     super(bus, state, document.getElementById("zoom-dialog"));
     this._cb = callbacks;
     this._elDialog = document.getElementById("zoom-dialog");
+    console.log('THIS.EL_DIALOG__', this._elDialog);
     this._elLayout = this._elDialog.querySelector(".zoom-dialog__layout");
     this._elMediaRail = document.getElementById("zoom-media-rail");
     this._elThumbs = document.getElementById("zoom-thumbnails");
